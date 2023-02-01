@@ -3,17 +3,41 @@ import {useState} from 'react';
 // NOT DONE WITH CHALLENGE, MUST SLEEP! 
 
 function Radio() {
-  // const [days, setDays] = useState(false);
-  // const radioHandler = () => {
-  //   setDays(!setDays)
-  // }
+  const [days, setDays] = useState(false);
+  const radioHandler = () => {
+    setDays(!setDays)
+  }
+
+  const daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+  const renderedDays = daysOfTheWeek.map((day) => {
+    return (
+        <label 
+        key={day.valueOf()} 
+        className="ma3">
+          <p className="pa2 pointer grow">
+            {day.valueOf()}
+          </p>
+          <input
+          className="pointer"
+          type="radio"
+          value={day.valueOf()}
+          onChange={radioHandler}
+          />
+        </label>
+    )
+  })
+
+  console.log(renderedDays);
 
   return (
     <div>
       <h3>Radio</h3>
         <div className="ma5 white-80">
 
-            <label className="ma3">
+          {renderedDays}
+
+            {/* <label className="ma3">
               <h2 className="pa2">
                 Availability:
               </h2>
@@ -53,7 +77,7 @@ function Radio() {
               </p>
               <input className="pointer dim" type="radio" value="Sunday" />
 
-            </label>
+            </label> */}
 
         </div>
     </div>

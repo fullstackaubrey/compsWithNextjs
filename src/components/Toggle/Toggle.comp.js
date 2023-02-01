@@ -3,7 +3,7 @@ import styles from './Toggle.module.css';
 
 function Toggle() {
   const [toggle, setToggle] = useState(false);
-  console.log("start", toggle)
+  // console.log("start", toggle)
   
   const handleToggle = () => {
     setToggle(!toggle)

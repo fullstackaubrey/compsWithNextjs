@@ -1,7 +1,11 @@
 import {useState} from 'react';
 
 function Input() {
-  // const [input, setInput] = useState(false);
+  const [input, setInput] = useState(false);
+
+  const inputHandler = () => {
+    setInput(true);
+  }
 
   return (
     <div>
@@ -11,17 +15,17 @@ function Input() {
 
             <label className="ma3">
               <p className="pa2">First name:</p>
-              <input className="gray" type="text" name="firstName" value="defaultFirst" />
+              <input className="gray" type="text" name="firstName" value="defaultFirst" onChange={inputHandler}/>
             </label>
 
             <label className="ma3">
               <p className="pa2">Last name:</p>
-              <input className="gray" type="text" name="lastName" value="defaultLast" />
+              <input className="gray" type="text" name="lastName" value="defaultLast" onChange={inputHandler}/>
             </label>
 
             <label className="ma3">
               <p className="pa2">Email address:</p>
-              <input className="gray" type="text" name="email" value="defaultEmail" />
+              <input className="gray" type="text" name="email" value="defaultEmail" onChange={inputHandler}/>
             </label>
 
             <input className="pointer dim" type="submit" value="Save Changes" />
