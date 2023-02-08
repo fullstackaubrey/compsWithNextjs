@@ -25,7 +25,7 @@ function Input() {
   return (
     <div>
       <h3>Input</h3>
-      <div className="br4 ma5 pa4 black bg-moon-gray w-50">
+      <div className="br4 ma5 pa4 black bg-light-red w-50">
         <label className="ma3">
           <p className="f4 pa2">First name:</p>
           <input
@@ -57,7 +57,7 @@ function Input() {
         </label>
 
         <input
-          className="flex pointer br2 mv3 pa2 dim bg-purple hover-bg-dark-green"
+          className="flex dim pointer br2 mv3 pa2 bg-purple hover-bg-dark-green"
           type="submit"
           value={saveButton}
           onClick={saveHandler}
