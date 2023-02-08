@@ -11,7 +11,7 @@ function Toggle() {
   const handleToggle = () => {
     setToggle(!toggle)
 
-    if (toggle === true) {
+    if (toggle === false) {
       backgroundColorHandler('blanchedalmond', 'brown')
     } else {
       backgroundColorHandler('black', 'white')
@@ -27,7 +27,7 @@ function Toggle() {
         </h2>
         <div className="flex">
           <p className="ph3">
-            Light
+            Dark
           </p>
           <label className={styles.hiddenCheckbox}>
             <input
@@ -36,7 +36,7 @@ function Toggle() {
             <span className={styles.switchTheme} />
           </label>
           <p className="ph3">
-            Dark
+            Light
           </p>
         </div>
       </div>

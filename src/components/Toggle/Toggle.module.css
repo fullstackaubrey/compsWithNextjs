@@ -14,7 +14,7 @@
 .hiddenCheckbox .switchTheme {
   position: absolute;
   cursor: pointer;
-  background-color: gray;
+  background-color: darkslateblue;
   border-radius: 25px;
   top: 0;
   right: 0;
@@ -26,7 +26,7 @@
 .hiddenCheckbox .switchTheme::before {
   position: absolute;
   content: "";
-  background-color: darkgrey;
+  background-color: blueviolet;
   border-radius: 50%;
   top: 2px;
   width: 21px;
@@ -37,9 +37,9 @@
 
 .hiddenCheckbox input[type="checkbox"]:checked + .switchTheme::before {
   transform: translateX(25px);
-  background-color: blueviolet;
+  background-color: gray;
 }
 
 .hiddenCheckbox input[type="checkbox"]:checked + .switchTheme {
-  background-color: darkslateblue;
+  background-color: darkgray;
 }
