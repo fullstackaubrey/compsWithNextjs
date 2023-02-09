@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/homePage.module.css';
+import { MdOutlineEast } from 'react-icons/md';
 
 export default function HomePage() {
   const name = "Darcy"; //allow users to change name in settings
@@ -26,8 +27,8 @@ export default function HomePage() {
           </header>
         </section>
         <nav className={styles.navroute}>
-          <Link href="/components">Components Library</Link>
-          <Link href="/settings">User Settings</Link>
+          <Link href="/components">Components Library<MdOutlineEast className={styles.arrow} /></Link>
+          <Link href="/settings">Settings<MdOutlineEast className={styles.arrow} /></Link>
         </nav>
       </main>
     </div>
