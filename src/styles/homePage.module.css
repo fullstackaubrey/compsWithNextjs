@@ -21,18 +21,6 @@
   background-color: rgb(75, 125, 170);
 }
 
-.usernav {
-  top: 0vh;
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  margin: .55rem;
-  padding: .5rem;
-  border-radius: 3px;
-  box-shadow: 2px 2px 2px rgba(35, 35, 85, 0.75);
-  background-color:rgb(135, 170, 210);
-}
-
 .section {
   height: 100%;
   width: 100%;
@@ -62,6 +50,18 @@
 .homeimg:hover {
   transition-duration: 1s;
   transform: scale(1.025);
+}
+
+.usernav {
+  top: 0vh;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  margin: .55rem;
+  padding: .5rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(35, 35, 85, 0.75);
+  background-color:rgb(135, 170, 210);
 }
 
 .navroute {

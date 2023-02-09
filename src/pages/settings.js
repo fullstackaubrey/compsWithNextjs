@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import {MdOutlineWest} from 'react-icons/md';
+import { MdOutlineWest } from 'react-icons/md';
 
 function SettingsPg() {
   return (
@@ -9,18 +9,17 @@ function SettingsPg() {
         <title>User Settings</title>
       </Head>
 
-      <h3 className="ma4">
+      <header>
         Change My Settings
-      </h3>
+      </header>
+      <section>
+        Lorem
+      </section>
 
-      <div className="flex">
-        <h4 className="ma4">
-          <Link href="/">
-            <MdOutlineWest className="mh1" />
-              Back to Homepage
-          </Link>
-        </h4>
-      </div>
+      <Link href="/">
+        <MdOutlineWest />
+        Return Home
+      </Link>
     </div>
   )
 }

@@ -24,45 +24,38 @@ function Input() {
 
   return (
     <div>
-      <h3>Input</h3>
-      <div className="br4 ma5 pa4 black bg-light-red w-50">
-        <label className="ma3">
-          <p className="f4 pa2">First name:</p>
+      <header>Input</header>
+      <section>
+        <label>
+          <p>First name:</p>
           <input
-            className="f4 dark-gray bg-light-gray"
             type="text"
             name="firstName"
             onChange={inputHandler}
             readOnly={save} />
         </label>
-
-        <label className="ma3">
-          <p className="f4 pa2">Last name:</p>
+        <label>
+          <p>Last name:</p>
           <input
-            className="f4 dark-gray bg-light-gray"
             type="text"
             name="lastName"
             onChange={inputHandler}
             readOnly={save} />
         </label>
-
-        <label className="ma3">
-          <p className="f4 pa2">Email address:</p>
+        <label>
+          <p>Email address:</p>
           <input
-            className="f4 dark-gray bg-light-gray"
             type="text"
             name="email"
             onChange={inputHandler}
             readOnly={save} />
         </label>
-
         <input
-          className="flex dim pointer br2 mv3 pa2 bg-purple hover-bg-dark-green"
           type="submit"
           value={saveButton}
           onClick={saveHandler}
         />
-      </div>
+      </section>
     </div>
   )
 }

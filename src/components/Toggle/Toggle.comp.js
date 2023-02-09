@@ -6,40 +6,30 @@ function Toggle() {
     document.body.style.background = bgcolor;
     document.body.style.color = txcolor;
   }
-
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle)
 
     if (toggle === false) {
-      backgroundColorHandler('rgb(214, 231, 241)', 'rgba(35, 35, 85)')
+      backgroundColorHandler('rgb(225, 236, 252)', 'rgba(35, 35, 85)')
     } else {
       backgroundColorHandler('black', 'white')
     }
   }
-
   return (
     <div>
-      <h3>Toggle</h3>
-      <div className="ma5 pa3 br2 white-80 bg-light-purple hover-bg-purple w-30">
-        <h2 className="pa2">
-          Switch Theme:
-        </h2>
-        <div className="flex">
-          <p className="ph3">
-            Dark
-          </p>
-          <label className={styles.hiddenCheckbox}>
-            <input
-              type="checkbox"
-              onChange={handleToggle} />
-            <span className={styles.switchTheme} />
-          </label>
-          <p className="ph3">
-            Light
-          </p>
-        </div>
-      </div>
+      <header>Toggle</header>
+      <h4>Switch Theme:</h4>
+      <section className={styles.togglecomp}>
+        <p>Dark</p>
+        <label className={styles.hiddenCheckbox}>
+          <input
+            type="checkbox"
+            onChange={handleToggle} />
+          <span className={styles.switchTheme} />
+        </label>
+        <p>Light</p>
+      </section>
     </div>
   )
 }

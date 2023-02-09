@@ -5,7 +5,7 @@ import styles from '../styles/homePage.module.css';
 import { MdOutlineEast } from 'react-icons/md';
 
 export default function HomePage() {
-  const name = "Darcy"; //allow users to change name in settings
+  const name = "Aubrey"; //allow users to change name in settings
   return (
     <div className={styles.homepage}>
       <Head>
@@ -27,6 +27,7 @@ export default function HomePage() {
           </header>
         </section>
         <nav className={styles.navroute}>
+          <Link href="/">Home<MdOutlineEast className={styles.arrow} /></Link>
           <Link href="/components">Components Library<MdOutlineEast className={styles.arrow} /></Link>
           <Link href="/settings">Settings<MdOutlineEast className={styles.arrow} /></Link>
         </nav>

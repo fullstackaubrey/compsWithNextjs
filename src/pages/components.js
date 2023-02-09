@@ -4,7 +4,7 @@ import Input from '../components/Input/Input.comp.js';
 import Radio from '../components/Radio/Radio.comp.js';
 import Slider from '../components/Slider/Slider.comp.js';
 import Toggle from '../components/Toggle/Toggle.comp.js';
-import {MdOutlineWest} from 'react-icons/md';
+import { MdOutlineWest } from 'react-icons/md';
 
 
 function ComponentsPg() {
@@ -13,34 +13,19 @@ function ComponentsPg() {
       <Head>
         <title>Components Library</title>
       </Head>
-
-      <h3 className="ma4">
+      <header>
         Components Library
-      </h3>
-
-      <div className="mh3">
-        <section>
-          <Input />
-        </section>
-        <section>
-          <Radio />
-        </section>
-        <section>
-          <Slider />
-        </section>
-        <section>
-          <Toggle />
-        </section>
-      </div>
-
-      <div className="flex">
-        <h4 className="ma4">
-          <Link href="/">
-            <MdOutlineWest className="mh1" />
-              Back to Homepage
-          </Link>
-        </h4>
-      </div>
+      </header>
+      <section>
+        <Input />
+        <Radio />
+        <Slider />
+        <Toggle />
+      </section>
+      <Link href="/">
+        <MdOutlineWest />
+        Return Home
+      </Link>
     </div>
   )
 }

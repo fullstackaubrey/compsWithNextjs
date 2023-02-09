@@ -41,12 +41,10 @@ function Slider() {
 
   return (
     <div>
-      <h3>Slider</h3>
-      <div className="ma5 pa3 br4 white-80 bg-light-red hover-bg-red w-25">
+      <header>Slider</header>
+      <section>
         <label>
-          <h2 className="pa2">
-            Appointment Hour:
-          </h2>
+          <h2>Appointment Hour:</h2>
           <input
             className={styles.hoursSlider}
             type="range"
@@ -55,9 +53,9 @@ function Slider() {
             max={max}
             onChange={sliderHandler} />
           {/* {count} */}
-          <h3 className="f3 pa2">{hour}{timeOfDay}</h3>
+          <h3>{hour}{timeOfDay}</h3>
         </label>
-      </div>
+      </section>
     </div>
   )
 }

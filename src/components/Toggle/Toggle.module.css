@@ -1,4 +1,8 @@
-/* Styles found online. */
+.togglecomp {
+  display: flex;
+}
+
+/* Styles for toggler found online. */
 
 .hiddenCheckbox {
   position: relative;
@@ -14,7 +18,7 @@
 .hiddenCheckbox .switchTheme {
   position: absolute;
   cursor: pointer;
-  background-color: darkslateblue;
+  background-color: rgb(110, 110, 190);
   border-radius: 25px;
   top: 0;
   right: 0;
@@ -26,7 +30,7 @@
 .hiddenCheckbox .switchTheme::before {
   position: absolute;
   content: "";
-  background-color: blueviolet;
+  background-color: rgb(55, 55, 125);
   border-radius: 50%;
   top: 2px;
   width: 21px;
@@ -37,9 +41,9 @@
 
 .hiddenCheckbox input[type="checkbox"]:checked + .switchTheme::before {
   transform: translateX(25px);
-  background-color: gray;
+  background-color: rgb(45, 140, 235);
 }
 
 .hiddenCheckbox input[type="checkbox"]:checked + .switchTheme {
-  background-color: darkgray;
+  background-color: rgb(160, 190, 235)
 }
