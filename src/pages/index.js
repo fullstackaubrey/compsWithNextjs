@@ -20,7 +20,7 @@ export default function HomePage() {
         <section className={styles.section}>
           <header className={styles.header}>
             <h1>Hello, {name}</h1>
-            <h3>Welcome to the Homepage!</h3>
+            <h4>Welcome to the homepage!</h4>
           </header>
         </section>
         <nav className={styles.navroute}>
