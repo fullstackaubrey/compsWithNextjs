@@ -5,7 +5,7 @@
 .homepage {
   width: 50vw;
   height: 100%;
-  top: 1vh;
+  top: 4vh;
   left: 25%;
   right: 25%;
   position: relative;
@@ -17,8 +17,8 @@
   width: 100%;
   height: 100%; 
   border-radius: 7.5px;
-  box-shadow: 2px 2px 5px 1px rgba(15, 15, 15, 0.65);
-  background-color: rgb(125, 145, 165);
+  box-shadow: 2px 2px 5px 1px rgba(35, 35, 85, 0.75);
+  background-color: rgb(75, 125, 170);
 }
 
 .usernav {
@@ -29,8 +29,8 @@
   margin: .55rem;
   padding: .5rem;
   border-radius: 3px;
-  box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.25);
-  background-color:rgb(175, 190, 205);
+  box-shadow: 2px 2px 2px rgba(35, 35, 85, 0.75);
+  background-color:rgb(135, 170, 210);
 }
 
 .section {
@@ -41,22 +41,22 @@
 }
 
 .header {
-  width: 50%;
-  left: 5%; 
-  top: 3vh;
+  width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
-  flex-direction: column; 
-  padding-bottom: 3vh;
+  align-items: center;
+  flex-direction: column;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  color:rgb(60, 45, 105);
+  color:rgb(233, 45, 45);
 }
 
 .homeimg {
   display: flex;
   position: relative;
-  box-shadow: 0px 1px 3px 1px rgba(15, 15, 15, 0.75);
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px 2px rgba(150, 0, 0, 0.75);
 }
 
 .homeimg:hover {
@@ -73,6 +73,6 @@
   margin: .55rem;
   padding: 1rem;
   border-radius: 3px;
-  box-shadow: -2px -2px 2px rgba(15, 15, 15, 0.25);
-  background-color:rgb(175, 190, 205);
+  box-shadow: 2px 2px 2px rgba(35, 35, 85, 0.75);
+  background-color:rgb(135, 170, 210);
 }

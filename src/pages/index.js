@@ -20,8 +20,8 @@ export default function HomePage() {
         </nav>
         <section className={styles.section}>
           <header className={styles.header}>
+            <h2>Hello, {name}</h2>
             <Image className={styles.homeimg} src="/homeimg.jpg" alt="tree branch with flowers" width="200" height="250" />
-            <h1>Hello, {name}</h1>
             <p>Welcome to the homepage!</p>
           </header>
         </section>
