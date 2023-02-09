@@ -31,7 +31,7 @@ function Radio() {
             {day.title}
           </p>
           <input
-            className="pointer ma2 w1"
+            className="pointer ma2 w1 bg-white"
             type="checkbox"
             onClick={checkboxHandler}
           />
