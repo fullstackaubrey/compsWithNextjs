@@ -12,7 +12,7 @@ function Toggle() {
     setToggle(!toggle)
 
     if (toggle === false) {
-      backgroundColorHandler('blanchedalmond', 'brown')
+      backgroundColorHandler('rgb(214, 231, 241)', 'rgba(35, 35, 85)')
     } else {
       backgroundColorHandler('black', 'white')
     }
