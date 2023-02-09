@@ -7,12 +7,13 @@
 }
 
 :root body {
-  background-color: rgb(219, 226, 255);
+  background-color: rgb(215, 225, 255);
 }
 
 :any-link, :any-link:visited {
+  text-transform: lowercase;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1rem;
@@ -22,7 +23,7 @@
 
 :any-link:hover { 
   transition-duration: 2s;
-  transform: scale(1.075);
-  font-weight: bolder;
-  color:rgb(226, 44, 44);
+  transform: scale(1.1);
+  font-weight: bold;
+  color:rgb(233, 45, 45);
 }
