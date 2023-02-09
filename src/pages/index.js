@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/homePage.module.css';
 
 export default function HomePage() {
@@ -19,8 +20,9 @@ export default function HomePage() {
         </nav>
         <section className={styles.section}>
           <header className={styles.header}>
+            <Image className={styles.homeimg} src="/homeimg.jpg" alt="tree branch with flowers" width="200" height="250" />
             <h1>Hello, {name}</h1>
-            <h4>Welcome to the homepage!</h4>
+            <p>Welcome to the homepage!</p>
           </header>
         </section>
         <nav className={styles.navroute}>
